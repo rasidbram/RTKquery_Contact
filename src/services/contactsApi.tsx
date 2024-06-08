@@ -4,7 +4,7 @@ import { Contact } from "../types/contact.type";
 
 export const contactsApi = createApi({
 	reducerPath: "contactsApi",
-	baseQuery: fetchBaseQuery({ baseUrl: "/api/contacts" }),
+	baseQuery: fetchBaseQuery({ baseUrl: "/contacts" }),
 	tagTypes: ["Contact"], // This is used to invalidate the cache
 	endpoints: builder => ({
 		contacts: builder.query<Contact[], void>({
